@@ -1,0 +1,20 @@
+#Server configuration
+server:
+  port: 8080
+#  servlet:
+#    context-path: /service
+#Spring configuration
+spring:
+  devtools:
+    livereload:
+      enabled: true  
+  application:
+    name: servicio-empleados
+#Eureka configuration
+eureka:
+  instance:
+    lease-renewal-interval-in-seconds: 60
+    lease-expiration-duration-in-seconds: 60
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka
